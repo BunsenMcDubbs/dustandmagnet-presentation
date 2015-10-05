@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Hands-On, Large Display Visual Data Exploration | Dust and Magnet on the Big Screen</title>
+
+		<meta name="description" content="Hands-On, Large Display Visual Data Exploration | Dust and Magnet on the Big Screen">
+		<meta name="author" content="Andrew Dai">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1><small>Hands-On, Large Display Visual Data Exploration</small></h1>
+					<p class="fragment">aka Dust and Magnet on a Big Fancy Touchscreen</p>
+					<p>
+						<small>Andrew Dai</small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Dust and Magnet <small class="fragment">(old)</small></h2>
+						<ul>
+							<li>multivariate data visualization</li>
+							<li>keyboard and mouse/desktop</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Picture</h2>
+					</section>
+
+					<section>
+						<h2>Picture</h2>
+					</section>
+
+					<section>
+						<h2>Video</h2>
+					</section>
+				</section>
+
+				<section>
+					<h2>Moving to a large multitouch display</h2>
+					<p><ul>
+						<li>take advantage of touch</li>
+						<li>more intuitive user interface</li>
+						<li>more interactive and responsive</li>
+						<li>allow collaboration</li>
+					</ul></p>
+				</section>
+
+				<section>
+					<section>
+						<h2><small class="fragment">(new)</small> Dust and Magnet</h2>
+						<ul>
+							<li>simplified interface</li>
+							<li>multitouch!</li>
+							<li>continously animated</li>
+							<li>occlusion-free mode</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Simplified, More Intutive Interface</h3>
+						<p><small>
+							multiple windows &rarr; one screen, collapsable menus, rounded corners, and big bright buttons
+						</small></p>
+					</section>
+
+					<section>
+						<h3>Adding and Removing Magnets</h3>
+					</section>
+
+					<section>
+						<h3>Resizing Magnets</h3>
+						<p><small>
+							pinch!
+						</small></p>
+					</section>
+
+					<section>
+						<h3>Continuous vs. Start/Stop</h3>
+						<p><small>
+							dust is always moving to equilibrium instead of only moving when magnets are moving
+						</small></p>
+					</section>
+
+					<section>
+						<h3>Occlusion-Free</h3>
+						<p><small>
+							tap on the screen!
+						</small></p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Todo:</h2>
+					<ul>
+						<li>detail view</li>
+						<li>inverse magnets</li>
+					</ul>
+					<h3 class="fragment">eta: eventually</h3>
+				</section>
+
+				<section>
+					<h2>thanks</h2>
+					<p>try it out: <a href="http://bit.ly/d3dnm">http://bit.ly/d3dnm</a></p>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
